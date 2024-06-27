@@ -9,8 +9,8 @@ def load_databases() -> None:
     """
     pipeline = dlt.pipeline(
         pipeline_name="notion",
-        destination='bigquery',
-        dataset_name="notion_data",
+        destination='notion-to-bigquery@devus-ds-adventures-1.iam.gserviceaccount.com',
+        dataset_name="Notion_to_bigquery",
     )
 
     data = notion_databases()
